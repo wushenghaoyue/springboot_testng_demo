@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="test">
+
+    <test name="login">
+        <classes>
+            <class name="com.woyun.suit.SuiteConfig"/>
+            <class name="com.woyun.suit.LoginTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.woyun.suit.SuiteConfig"/>
+            <class name="com.woyun.suit.PayTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <!--<listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListenerOld" />-->
+        <listener class-name="com.woyun.report.ExtentTestNGIReporterListener" />
+    </listeners>
+</suite>
